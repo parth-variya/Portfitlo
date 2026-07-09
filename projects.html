@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projects | Parth Variya</title>
+  <meta name="description" content="Projects by Parth Variya — premium cards with filtering, QR codes, tech tags, GitHub and live demo buttons." />
+  <meta name="keywords" content="Projects, Parth Variya, Shopping Cart, React, Node.js" />
+  <meta name="author" content="Parth Variya" />
+
+  <meta property="og:title" content="Projects | Parth Variya" />
+  <meta property="og:description" content="Portfolio projects with category filtering and QR." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div id="loader" class="loader" aria-live="polite">
+    <div class="loader-card">
+      <div class="loader-bar"><span></span></div>
+      <p>Loading portfolio...</p>
+    </div>
+  </div>
+
+  <div id="cursor" class="cursor" aria-hidden="true"></div>
+  <div id="cursorDot" class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">P</div>
+        <div class="brand-name">Parth<span>.</span></div>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button id="themeBtn" class="icon-btn" type="button" aria-label="Switch theme">🌙</button>
+        <button id="hamburgerBtn" class="icon-btn hamburger" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile menu">
+      <div class="mobile-panel">
+        <div class="mobile-links">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+            <div class="brand-name">Parth<span>.</span></div>
+            <button id="closeDrawer" class="icon-btn" type="button" aria-label="Close menu">✕</button>
+          </div>
+          <a href="index.html" data-close>Home</a>
+          <a href="about.html" data-close>About</a>
+          <a href="skills.html" data-close>Skills</a>
+          <a href="projects.html" data-close>Projects</a>
+          <a href="education.html" data-close>Education</a>
+          <a href="contact.html" data-close>Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="pageFade">
+    <section class="section">
+
+      <div class="container">
+        <h2 class="section-title reveal fade-up">Projects</h2>
+        <p class="section-lead reveal fade-up" style="max-width:860px;">Filter by category and explore premium project cards with tech tags, QR codes, and quick actions.</p>
+
+        <div class="controls reveal slide-left" id="projectFilters" style="margin-top:18px;">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="ecommerce" type="button">E-commerce</button>
+          <button class="filter-btn" data-filter="frontend" type="button">Frontend</button>
+          <button class="filter-btn" data-filter="fullstack" type="button">Full Stack</button>
+        </div>
+
+        <div class="projects-grid" style="margin-top:18px;">
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-category="ecommerce" aria-label="Shopping Cart Project">
+            <div class="thumb" style="display:none;"></div>
+
+            <div style="padding:14px 6px 0;">
+              <div class="tag-row">
+                <span class="tag">🛒 E-commerce</span>
+                <span class="tag">React</span>
+                <span class="tag">UI/UX</span>
+              </div>
+              <h3 style="margin:6px 0 10px; font-size:22px; font-weight:900;">Shopping Cart Project</h3>
+              <p class="section-lead" style="margin:0 0 12px; font-size:14px;">A responsive shopping cart experience with modern UI patterns and smooth interactions.</p>
+
+              <div class="grid-2" style="gap:12px; align-items:start;">
+                <div>
+                  <div class="tag-row" style="margin:0 0 10px;">
+                    <span class="tag">Tech</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React</span>
+                  </div>
+                  <div class="project-actions">
+                    <a class="btn btn-primary" href="https://github.com/parth-variya/shopping-cart-project" target="_blank" rel="noreferrer">GitHub</a>
+                  
+                  </div>
+                </div>
+
+                <div>
+                  <div class="skill-card glass" style="padding:14px; border-radius:18px; background: rgba(255,255,255,.03);">
+                    <div style="font-weight:900; color:var(--text); margin-bottom:8px;">QR Code</div>
+                    <img src="Picture1.jpg" alt="QR Code" style="width:120px; height:120px; margin:8px auto 0; border-radius:16px;" />
+
+                  
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 placeholder card for premium layout -->
+          <article class="project-card reveal" data-category="frontend" aria-label="Frontend UI Project">
+            <div class="thumb" style="display:none;"></div>
+
+            <div style="padding:14px 6px 0;">
+              <div class="tag-row">
+                <span class="tag">✨ Frontend</span>
+                <span class="tag">Animations</span>
+              </div>
+              <h3 style="margin:6px 0 10px; font-size:22px; font-weight:900;">Premium UI Components</h3>
+              <p class="section-lead" style="margin:0 0 12px; font-size:14px;">A reusable UI component set focused on glass cards, hover glow, and smooth reveal animations.</p>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://github.com/parth-variya" target="_blank" rel="noreferrer">GitHub</a>
+                
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="fullstack" aria-label="Full Stack Project">
+            <div class="thumb" style="display:none;"></div>
+
+            <div style="padding:14px 6px 0;">
+              <div class="tag-row">
+                <span class="tag">⚙️ Full Stack</span>
+                <span class="tag">APIs</span>
+                <span class="tag">Database</span>
+              </div>
+              <h3 style="margin:6px 0 10px; font-size:22px; font-weight:900;">API + Database Integration</h3>
+              <p class="section-lead" style="margin:0 0 12px; font-size:14px;">A backend integration project showcasing data flow, CRUD patterns, and polished frontend consumption.</p>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://github.com/parth-variya" target="_blank" rel="noreferrer">GitHub</a>
+            
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div style="font-weight:900;">© 2026 Parth Variya</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:pkvariya32@gmail.com">Email</a>
+        <a href="tel:+917016491638">Phone</a>
+        <a href="https://github.com/parth-variya" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

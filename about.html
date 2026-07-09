@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About | Parth Variya</title>
+  <meta name="description" content="About Parth Variya — Full Stack Web Developer. Career objective, personal info, timeline and fun facts." />
+  <meta name="keywords" content="About, Parth Variya, Full Stack Developer" />
+  <meta name="author" content="Parth Variya" />
+  <meta property="og:title" content="About | Parth Variya" />
+  <meta property="og:description" content="Career objective, personal info cards, experience timeline and fun facts." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div id="loader" class="loader" aria-live="polite">
+    <div class="loader-card">
+      <div class="loader-bar"><span></span></div>
+      <p>Loading portfolio...</p>
+    </div>
+  </div>
+  <div id="cursor" class="cursor" aria-hidden="true"></div>
+  <div id="cursorDot" class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">P</div>
+        <div class="brand-name">Parth<span>.</span></div>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button id="themeBtn" class="icon-btn" type="button" aria-label="Switch theme">🌙</button>
+        <button id="hamburgerBtn" class="icon-btn hamburger" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile menu">
+      <div class="mobile-panel">
+        <div class="mobile-links">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+            <div class="brand-name">Parth<span>.</span></div>
+            <button id="closeDrawer" class="icon-btn" type="button" aria-label="Close menu">✕</button>
+          </div>
+          <a href="index.html" data-close>Home</a>
+          <a href="about.html" data-close>About</a>
+          <a href="skills.html" data-close>Skills</a>
+          <a href="projects.html" data-close>Projects</a>
+          <a href="education.html" data-close>Education</a>
+          <a href="contact.html" data-close>Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="pageFade">
+    <section class="section">
+
+      <div class="container">
+        <h2 class="section-title reveal fade-up">About Me</h2>
+        <p class="section-lead reveal fade-up">
+          I’m <b>Parth Variya</b>, a BCA graduate from <b>Vivekanand College</b> under <b>VNSGU University</b>.
+          I enjoy building modern, responsive web applications and continuously improving my skills.
+        </p>
+
+        <div class="grid-2" style="margin-top:18px;">
+          <div class="skill-card glass reveal zoom-in">
+            <h4 style="margin:0 0 10px; font-size:18px;">Career Objective</h4>
+            <p class="section-lead" style="margin:0; font-size:15px;">
+              To become a <b>Full Stack Web Developer</b> and deliver user-friendly, high-performance digital products.
+              I focus on clean code, scalable patterns, and premium UI/UX.
+            </p>
+          </div>
+
+          <div class="skill-card glass reveal zoom-in">
+            <h4 style="margin:0 0 10px; font-size:18px;">Working Style</h4>
+            <div class="pill-row">
+              <span class="pill">UI/UX-first</span>
+              <span class="pill">Performance</span>
+              <span class="pill">Clean code</span>
+              <span class="pill">Iterate fast</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top:18px;">
+          <div class="skill-card glass reveal zoom-in">
+            <h4>Role</h4>
+            <p>Full Stack Web Developer</p>
+          </div>
+          <div class="skill-card glass reveal zoom-in">
+            <h4>Focus</h4>
+            <p>React UI + Node APIs</p>
+          </div>
+          <div class="skill-card glass reveal zoom-in">
+            <h4>Location</h4>
+            <p>India</p>
+          </div>
+        </div>
+
+        <div style="margin-top:28px;">
+          <h3 class="section-title" style="font-size:clamp(22px,2.2vw,30px);">Experience Timeline</h3>
+          <div class="timeline">
+            <div class="t-item reveal fade-up">
+              <div class="t-meta">2024 — Present</div>
+              <div class="t-title">Frontend & Full Stack Projects</div>
+              <div class="section-lead" style="font-size:14px; margin-top:6px;">Building responsive interfaces and integrating backend logic.</div>
+            </div>
+            <div class="t-item reveal fade-up">
+              <div class="t-meta">2023 — 2024</div>
+              <div class="t-title">Learning & Development</div>
+              <div class="section-lead" style="font-size:14px; margin-top:6px;">HTML/CSS/JS, React patterns, API concepts, and database fundamentals.</div>
+            </div>
+            <div class="t-item reveal fade-up">
+              <div class="t-meta">2020 — 2023</div>
+              <div class="t-title">BCA Education</div>
+              <div class="section-lead" style="font-size:14px; margin-top:6px;">Core computer science + practical development approach.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:28px;" class="grid-2">
+          <div class="skill-card glass reveal zoom-in">
+            <h4 style="margin:0 0 10px; font-size:18px;">Fun Facts</h4>
+            <ul class="section-lead" style="margin:0; padding-left:18px; font-size:15px;">
+              <li>Obsessed with smooth micro-interactions.</li>
+              <li>Enjoys turning ideas into clean UI components.</li>
+              <li>Always learning new frontend patterns.</li>
+              <li>Prefers performance-friendly animations.</li>
+            </ul>
+          </div>
+          <div class="skill-card glass reveal zoom-in">
+            <h4 style="margin:0 0 10px; font-size:18px;">Let’s Build Something Premium</h4>
+            <p class="section-lead" style="margin:0; font-size:15px;">
+              If you’re looking for a developer who cares about UI quality and delivery speed, I’m ready.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div style="font-weight:900;">© 2026 Parth Variya</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:pkvariya32@gmail.com">Email</a>
+        <a href="tel:+917016491638">Phone</a>
+        <a href="https://github.com/parth-variya" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
+

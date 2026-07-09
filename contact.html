@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Parth Variya</title>
+  <meta name="description" content="Contact Parth Variya — form, email, phone, GitHub, LinkedIn and map." />
+  <meta name="keywords" content="Contact, Parth Variya, email, phone, GitHub, LinkedIn" />
+  <meta name="author" content="Parth Variya" />
+
+  <meta property="og:title" content="Contact | Parth Variya" />
+  <meta property="og:description" content="Contact form and links." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div id="loader" class="loader" aria-live="polite">
+    <div class="loader-card">
+      <div class="loader-bar"><span></span></div>
+      <p>Loading portfolio...</p>
+    </div>
+  </div>
+
+  <div id="cursor" class="cursor" aria-hidden="true"></div>
+  <div id="cursorDot" class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">P</div>
+        <div class="brand-name">Parth<span>.</span></div>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button id="themeBtn" class="icon-btn" type="button" aria-label="Switch theme">🌙</button>
+        <button id="hamburgerBtn" class="icon-btn hamburger" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile menu">
+      <div class="mobile-panel">
+        <div class="mobile-links">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+            <div class="brand-name">Parth<span>.</span></div>
+            <button id="closeDrawer" class="icon-btn" type="button" aria-label="Close menu">✕</button>
+          </div>
+          <a href="index.html" data-close>Home</a>
+          <a href="about.html" data-close>About</a>
+          <a href="skills.html" data-close>Skills</a>
+          <a href="projects.html" data-close>Projects</a>
+          <a href="education.html" data-close>Education</a>
+          <a href="contact.html" data-close>Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="pageFade">
+
+
+      <div class="container">
+        <h2 class="section-title reveal fade-up">Contact</h2>
+        <p class="section-lead reveal fade-up" style="max-width:860px;">Send a message and I’ll get back to you. For quick contact, use the links below.</p>
+
+        <div style="margin-top:22px;">
+          <div class="skill-card glass reveal zoom-in" style="padding:18px; max-width:820px; margin:0 auto;">
+            <h3 style="margin:0 0 12px; font-size:20px;">Direct Contact</h3>
+
+              <div class="section-lead" style="margin:0 0 10px; font-size:14px;">
+
+                <b>Email:</b> <a href="mailto:pkvariya32@gmail.com">pkvariya32@gmail.com</a>
+              </div>
+              <div class="section-lead" style="margin:0 0 10px; font-size:14px;">
+                <b>Phone:</b> <a href="tel:+917016491638">+91 7016491638</a>
+              </div>
+              <div class="section-lead" style="margin:0 0 10px; font-size:14px;">
+                <b>GitHub:</b> <a href="https://github.com/parth-variya" target="_blank" rel="noreferrer">github.com/parth-variya</a>
+              </div>
+             
+
+              <div class="pill-row" style="margin-top:12px;">
+                <a class="pill" href="https://github.com/parth-variya" target="_blank" rel="noreferrer" style="text-decoration:none;">GitHub</a>
+                <a class="pill" href="mailto:pkvariya32@gmail.com" style="text-decoration:none;">Email</a>
+                <a class="pill" href="tel:+917016491638" style="text-decoration:none;">Phone</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div style="font-weight:900;">© 2026 Parth Variya</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:pkvariya32@gmail.com">Email</a>
+        <a href="tel:+917016491638">Phone</a>
+        <a href="https://github.com/parth-variya" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
