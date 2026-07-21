@@ -7,6 +7,7 @@
   .stats{ grid-template-columns: repeat(2, 1fr); }
   .projects-grid{ grid-template-columns: repeat(2, 1fr); }
   .grid-2{ grid-template-columns: 1fr; }
+  .grid-3{ grid-template-columns: repeat(2, 1fr); }
   .skill-grid{ grid-template-columns: 1fr; }
 }
 
@@ -51,6 +52,7 @@
   .mobile-links a:hover{ border-color: rgba(56,189,248,.45); }
 
   .stats{ grid-template-columns: 1fr 1fr; }
+  .grid-3{ grid-template-columns: 1fr; }
   .projects-grid{ grid-template-columns: 1fr; }
   .form{ grid-template-columns: 1fr; }
   .hero-profile{ justify-content:flex-start; }
